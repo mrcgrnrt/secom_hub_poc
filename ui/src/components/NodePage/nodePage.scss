@@ -1,0 +1,186 @@
+@use "~@infineon/design-system-tokens/dist/tokens";
+
+* { 
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container { 
+  
+  & .main__wizard-template-wrapper { 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: tokens.$ifxColorEngineering100;
+
+    & .content__wrapper { 
+      display: inline-flex;
+      padding: tokens.$ifxSpace600;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: tokens.$ifxSpace100;
+      border: 1px solid tokens.$ifxColorEngineering200;
+      background: tokens.$ifxColorBaseWhite;
+
+      & .form__wrapper { 
+        display: flex;
+        flex-direction: column;
+        gap: tokens.$ifxSpace600;
+
+        & .tittle__wrapper { 
+          color: tokens.$ifxColorOcean500;
+          font-size: tokens.$ifxSize450;
+          font-style: normal;
+          font-weight: tokens.$ifxFontWeightSemibold;
+          line-height: tokens.$ifxSize600; 
+          letter-spacing: -0.36px;
+        }
+
+        & .section__wrapper { 
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: tokens.$ifxSpace600;
+          & .section { 
+            display: flex;
+            flex-direction: column;
+            gap: tokens.$ifxSpace300;
+            width: 100%;
+  
+            & .section__title-wrapper { 
+              color: tokens.$ifxColorBaseBlack;
+              font-size: tokens.$ifxSize300;
+              font-style: normal;
+              font-weight: tokens.$ifxFontWeightSemibold;
+              line-height: tokens.$ifxSize400; 
+              letter-spacing: -0.24px;
+            }
+  
+            & .radio__button-wrapper { 
+              display: flex;
+              padding: tokens.$ifxSize0;
+              align-items: flex-start;
+              align-content: flex-start;
+              gap: tokens.$ifxSpace300;
+              flex-wrap: wrap;
+            }
+  
+            & .input__fields-wrapper { 
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              gap: tokens.$ifxSpace300;
+              width: 696px;
+  
+              & .text__fields-wrapper { 
+                display: flex;
+                gap: tokens.$ifxSpace300;
+                width: 100%;
+  
+                & .text__field { 
+                  flex: tokens.$ifxSpace12;
+                }
+              }
+  
+              & .date__picker-wrapper { 
+                display: flex;
+                width: 100%;
+                gap: tokens.$ifxSpace300;
+  
+                & .date__picker { 
+                  width: 336px;
+                }
+              }
+            }
+
+              
+            & .tab-wrapper { 
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              gap: tokens.$ifxSpace300;
+              width: 100%;
+            }
+          }
+        }
+
+        & .btn__wrapper { 
+          display: flex;
+          justify-content: flex-end;
+          padding-top: tokens.$ifxSpace500;
+          border-top: 1px solid tokens.$ifxColorEngineering200;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) { 
+  .container { 
+    & .main__wizard-template-wrapper { 
+      & .stepper__wrapper { 
+        width: tokens.$ifxSize6000;
+        padding: tokens.$ifxSpace200 0;
+      }
+      & .content__wrapper { 
+        & .form__wrapper { 
+          & .section__wrapper { 
+            & .section { 
+              & .input__fields-wrapper { 
+                width: 696px;
+                & .date__picker-wrapper { 
+                  & .date__picker { 
+                    width: 336px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) { 
+  .container { 
+    & .main__wizard-template-wrapper { 
+      .stepper__wrapper { 
+        display: flex;
+        justify-content: flex-start;
+        width: 336px;
+        padding: tokens.$ifxSpace500 tokens.$ifxSpace200 tokens.$ifxSpace200 0;
+        & .stepper { 
+          width: 180px;
+        }
+      }
+      & .content__wrapper { 
+        & .form__wrapper { 
+          & .tittle__wrapper { 
+            font-size: 26px;
+            line-height: tokens.$ifxSize450;
+          }
+          & .section__wrapper { 
+            & .section { 
+              width: 100%;
+              & .input__fields-wrapper { 
+                width: 100%;
+                gap: tokens.$ifxSpace150;
+                & .text__fields-wrapper { 
+                  flex-direction: column;
+                  gap: tokens.$ifxSpace150;
+                }
+                & .date__picker-wrapper { 
+                  & .date__picker { 
+                    width: 100%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

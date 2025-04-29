@@ -1,0 +1,72 @@
+{
+    "version": "1.0",
+    "influx": {
+        "host": "drslv0136.drs.infineon.com",
+        "port": 8086,
+        "endpoint": "/api/v2/write?org=Industrial%20Analytics&bucket=ealite",
+        "token": "J7LWOysHHGOwDoDW19uTNZ96L35-Y-TqTL-7Fm2m_Wiis8HnqDwtmk4Rq9t4DIq_3ech9kbAuHrfCx-pcUYWwg=="
+    },
+    "datapoints": [
+        {
+            "d": "269521412",
+            "p": {
+                "min": 12,
+                "max": 6000,
+                "noct": 3
+            },
+            "u": "0a30fe3a"
+        },
+        {
+            "d": "269521154",
+            "u": "0a307269"
+        },
+        {
+            "d": "269521155",
+            "u": "0a30382c"
+        },
+        {
+            "d": "269521153",
+            "u": "0a308c26"
+        },
+        {
+            "d": "269521410",
+            "u": "0a300774"
+        },
+        {
+            "d": "269521409",
+            "u": "0a302131"
+        },
+        {
+            "d": "269521413",
+            "p": {
+                "range": [
+                    "0001000C",
+                    "000C0096",
+                    "009602BC",
+                    "02BC1388"
+                ]
+            },
+            "u": "0a30209a"
+        },
+        {
+            "d": "269521158",
+            "p": {
+                "min": 12,
+                "max": 6000,
+                "noct": 3
+            },
+            "u": "0a303ae"
+        },
+        {
+            "d": "269521159",
+            "p": {
+                "range": [
+                    "00010014",
+                    "00140096",
+                    "009609C4"
+                ]
+            },
+            "u": "0a30d60e"
+        }
+    ]
+}

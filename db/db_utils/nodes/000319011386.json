@@ -1,0 +1,63 @@
+{
+    "version": "1.0",
+    "influx": {
+        "host": "rbglv0499.rbg.infineon.com",
+        "port": 8086,
+        "endpoint": "/api/v2/write?org=Industrial%20Analytics&bucket=infineon-regensburg",
+        "token": "eoKdH9dWVY7fuUyiCqKUViL5wGNPFQQfRuIo8QprKA1UdaaegMQqnu0meA7_XzBNbm9oONBm0PQpiDkCALN5cA=="
+    },
+    "datapoints": [
+        {
+            "d": "269521412",
+            "p": {
+                "min": 12,
+                "max": 6000,
+                "noct": 3
+            },
+            "u": "50e4c3a9"
+        },
+        {
+            "d": "269521154",
+            "u": "958737d8"
+        },
+        {
+            "d": "269521155",
+            "u": "8fa6fd9b"
+        },
+        {
+            "d": "269521153",
+            "u": "84f05195 "
+        },
+        {
+            "d": "269521410",
+            "u": "699cce3"
+        },
+        {
+            "d": "269521409",
+            "u": "f602e6a0"
+        },
+        {
+            "d": "269521413",
+            "p": {
+                "range": ["0001000C", "000C0096", "009602BC", "02BC1388"]
+            },
+            "u": "4344e609"
+        },
+        {
+    		"d": "269521158",
+            "p": {
+                "min": 12,
+                "max": 6000,
+			    "noct": 3
+            },
+            "u": "68fe791d"
+        },
+        {
+            "d": "269521159",
+            "p": {
+                "range": ["00010014", "00140096", "009609C4"]
+            },
+            "u": "5b5e9b7d"
+        }
+    ]
+}

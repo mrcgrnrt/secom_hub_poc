@@ -1,0 +1,28 @@
+.node-card {
+  max-width: 800px;
+  margin: 20px auto;
+  
+  .ifx-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .ifx-textarea, .ifx-button-group {
+    grid-column: 1 / -1;
+  }
+  
+  .ifx-button-group {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    
+    .ifx-button {
+      margin-left: 10px;
+    }
+  }
+}

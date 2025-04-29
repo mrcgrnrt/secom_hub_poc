@@ -1,0 +1,19 @@
+{
+    "version": "1.0",
+    "influx": {
+        "host": "drslv0136.drs.infineon.com",
+        "port": 8086,
+        "endpoint": "/api/v2/write?org=Industrial%20Analytics&bucket=air",
+        "token": "J7LWOysHHGOwDoDW19uTNZ96L35-Y-TqTL-7Fm2m_Wiis8HnqDwtmk4Rq9t4DIq_3ech9kbAuHrfCx-pcUYWwg=="
+    },
+    "datapoints": [
+        {
+            "d": "1082176264",
+            "u": "2bdfa8d0"
+        },
+        {
+            "d": "1082180360",
+            "u": "4536c62b"
+        }
+    ]
+}
